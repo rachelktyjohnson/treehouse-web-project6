@@ -83,3 +83,17 @@ function addPagination(list){
 // Call functions
 showPage(data,1);
 addPagination(data);
+
+
+/*
+* SEARCH COMPONENT
+ */
+let header = document.querySelector('.header');
+let search_html = `
+<label for="search" class="student-search">
+  <span>Search by name</span>
+  <input id="search" placeholder="Search by name...">
+  <button type="button"><img src="img/icn-search.svg" alt="Search icon"></button>
+</label>
+`
+header.insertAdjacentHTML('beforeend',search_html);
